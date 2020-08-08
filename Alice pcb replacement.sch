@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5F2FC833
-P 2000 -3900
-F 0 "U1" H 2000 -5789 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 2000 -5880 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2000 -3900 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2000 -3900 50  0001 C CNN
-	1    2000 -3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 5F300BA8
 P 1900 -5850
@@ -37,13 +26,7 @@ F 3 "" H 1900 -5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 -5700 2000 -5700
-Wire Wire Line
 	1900 -5700 1900 -5850
-Connection ~ 1900 -5700
-Connection ~ 2000 -5700
-Wire Wire Line
-	2000 -5700 1900 -5700
 $Comp
 L power:GND #PWR0102
 U 1 1 5F301725
@@ -55,18 +38,13 @@ F 3 "" H 1450 -2100 50  0001 C CNN
 	1    1450 -2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 -2100 1900 -2100
-Connection ~ 1900 -2100
-Wire Wire Line
-	1900 -2100 1450 -2100
 $Comp
 L Device:R_Small R4
 U 1 1 5F302FF7
 P 3400 -3300
 F 0 "R4" V 3204 -3300 50  0000 C CNN
 F 1 "10k" V 3295 -3300 50  0000 C CNN
-F 2 "" H 3400 -3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3400 -3300 50  0001 C CNN
 F 3 "~" H 3400 -3300 50  0001 C CNN
 	1    3400 -3300
 	0    1    1    0   
@@ -83,46 +61,14 @@ F 3 "" H 4300 -3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 -3300 3300 -3300
-Wire Wire Line
 	3500 -3300 4300 -3300
-$Comp
-L Device:R_Small R2
-U 1 1 5F307178
-P 800 -4400
-F 0 "R2" V 604 -4400 50  0000 C CNN
-F 1 "22" V 695 -4400 50  0000 C CNN
-F 2 "" H 800 -4400 50  0001 C CNN
-F 3 "~" H 800 -4400 50  0001 C CNN
-	1    800  -4400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5F30870E
-P 350 -4300
-F 0 "R3" V 154 -4300 50  0000 C CNN
-F 1 "22" V 245 -4300 50  0000 C CNN
-F 2 "" H 350 -4300 50  0001 C CNN
-F 3 "~" H 350 -4300 50  0001 C CNN
-	1    350  -4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 -4400 900  -4400
-Wire Wire Line
-	700  -4400 -50  -4400
-Wire Wire Line
-	1400 -4300 450  -4300
-Wire Wire Line
-	250  -4300 -50  -4300
 $Comp
 L Device:C_Small C3
 U 1 1 5F31CA37
 P 750 -4000
 F 0 "C3" H 842 -3954 50  0000 L CNN
 F 1 "1uF" H 842 -4045 50  0000 L CNN
-F 2 "" H 750 -4000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 750 -4000 50  0001 C CNN
 F 3 "~" H 750 -4000 50  0001 C CNN
 	1    750  -4000
 	1    0    0    -1  
@@ -148,7 +94,7 @@ U 1 1 5F322E8A
 P -650 -2650
 F 0 "C4" H -558 -2604 50  0000 L CNN
 F 1 "0.1uF" H -558 -2695 50  0000 L CNN
-F 2 "" H -650 -2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H -650 -2650 50  0001 C CNN
 F 3 "~" H -650 -2650 50  0001 C CNN
 	1    -650 -2650
 	1    0    0    -1  
@@ -159,7 +105,7 @@ U 1 1 5F323A51
 P -250 -2650
 F 0 "C5" H -158 -2604 50  0000 L CNN
 F 1 "0.1uF" H -158 -2695 50  0000 L CNN
-F 2 "" H -250 -2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H -250 -2650 50  0001 C CNN
 F 3 "~" H -250 -2650 50  0001 C CNN
 	1    -250 -2650
 	1    0    0    -1  
@@ -170,7 +116,7 @@ U 1 1 5F323F5E
 P 150 -2650
 F 0 "C6" H 242 -2604 50  0000 L CNN
 F 1 "0.1uF" H 242 -2695 50  0000 L CNN
-F 2 "" H 150 -2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 150 -2650 50  0001 C CNN
 F 3 "~" H 150 -2650 50  0001 C CNN
 	1    150  -2650
 	1    0    0    -1  
@@ -181,7 +127,7 @@ U 1 1 5F3245AA
 P 550 -2650
 F 0 "C7" H 642 -2604 50  0000 L CNN
 F 1 "10uF" H 642 -2695 50  0000 L CNN
-F 2 "" H 550 -2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 550 -2650 50  0001 C CNN
 F 3 "~" H 550 -2650 50  0001 C CNN
 	1    550  -2650
 	1    0    0    -1  
@@ -231,132 +177,12 @@ Connection ~ 150  -2550
 Wire Wire Line
 	150  -2550 550  -2550
 $Comp
-L power:+5V #PWR0107
-U 1 1 5F32940C
-P 350 -4600
-F 0 "#PWR0107" H 350 -4750 50  0001 C CNN
-F 1 "+5V" H 365 -4427 50  0000 C CNN
-F 2 "" H 350 -4600 50  0001 C CNN
-F 3 "" H 350 -4600 50  0001 C CNN
-	1    350  -4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 -4600 350  -4600
-$Comp
-L Device:Crystal_GND24_Small Y1
-U 1 1 5F32CA4F
-P 750 -5100
-F 0 "Y1" V 704 -4956 50  0000 L CNN
-F 1 "16MHz" V 795 -4956 50  0000 L CNN
-F 2 "" H 750 -5100 50  0001 C CNN
-F 3 "~" H 750 -5100 50  0001 C CNN
-	1    750  -5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 -5200 750  -5200
-Wire Wire Line
-	750  -5000 1400 -5000
-$Comp
-L Device:C_Small C1
-U 1 1 5F335084
-P 400 -5250
-F 0 "C1" V 171 -5250 50  0000 C CNN
-F 1 "22pF" V 262 -5250 50  0000 C CNN
-F 2 "" H 400 -5250 50  0001 C CNN
-F 3 "~" H 400 -5250 50  0001 C CNN
-	1    400  -5250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 5F336815
-P 150 -4850
-F 0 "#PWR0108" H 150 -5100 50  0001 C CNN
-F 1 "GND" H 155 -5023 50  0000 C CNN
-F 2 "" H 150 -4850 50  0001 C CNN
-F 3 "" H 150 -4850 50  0001 C CNN
-	1    150  -4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5F337872
-P 400 -4950
-F 0 "C2" V 171 -4950 50  0000 C CNN
-F 1 "22pF" V 262 -4950 50  0000 C CNN
-F 2 "" H 400 -4950 50  0001 C CNN
-F 3 "~" H 400 -4950 50  0001 C CNN
-	1    400  -4950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	750  -5200 750  -5250
-Wire Wire Line
-	750  -5250 500  -5250
-Connection ~ 750  -5200
-Wire Wire Line
-	150  -5250 150  -4950
-Wire Wire Line
-	750  -5000 500  -5000
-Wire Wire Line
-	500  -5000 500  -4950
-Connection ~ 750  -5000
-Wire Wire Line
-	150  -4950 300  -4950
-Connection ~ 150  -4950
-Wire Wire Line
-	150  -4950 150  -4850
-Wire Wire Line
-	150  -4850 650  -4850
-Wire Wire Line
-	650  -4850 650  -4900
-Connection ~ 150  -4850
-Wire Wire Line
-	650  -4900 850  -4900
-Wire Wire Line
-	850  -4900 850  -5100
-Connection ~ 650  -4900
-Wire Wire Line
-	650  -4900 650  -5100
-Wire Wire Line
-	300  -5250 150  -5250
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5F33D731
-P 1050 -5400
-F 0 "SW1" H 1050 -5115 50  0000 C CNN
-F 1 "SW_Push" H 1050 -5206 50  0000 C CNN
-F 2 "" H 1050 -5200 50  0001 C CNN
-F 3 "~" H 1050 -5200 50  0001 C CNN
-	1    1050 -5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5F33EC4A
-P 700 -5500
-F 0 "#PWR0109" H 700 -5750 50  0001 C CNN
-F 1 "GND" H 705 -5673 50  0000 C CNN
-F 2 "" H 700 -5500 50  0001 C CNN
-F 3 "" H 700 -5500 50  0001 C CNN
-	1    700  -5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  -5500 850  -5500
-Wire Wire Line
-	850  -5500 850  -5400
-Wire Wire Line
-	1250 -5400 1300 -5400
-$Comp
 L Device:R_Small R1
 U 1 1 5F343573
 P 1300 -5750
 F 0 "R1" H 1359 -5704 50  0000 L CNN
 F 1 "10k" H 1359 -5795 50  0000 L CNN
-F 2 "" H 1300 -5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1300 -5750 50  0001 C CNN
 F 3 "~" H 1300 -5750 50  0001 C CNN
 	1    1300 -5750
 	1    0    0    -1  
@@ -374,22 +200,13 @@ F 3 "" H 1300 -5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 -5950 1300 -5850
-Wire Wire Line
-	1300 -5650 1300 -5400
-Connection ~ 1300 -5400
-Wire Wire Line
-	1300 -5400 1400 -5400
-Text GLabel -50  -4400 0    50   Input ~ 0
-D+
-Text GLabel -50  -4300 0    50   Input ~ 0
-D-
 $Comp
 L random-keyboard-parts:Molex-0548190589 USB1
 U 1 1 5F2E6852
 P 5050 -5350
 F 0 "USB1" V 5587 -5383 60  0000 C CNN
 F 1 "Molex-0548190589" V 5481 -5383 60  0000 C CNN
-F 2 "" H 5050 -5350 60  0001 C CNN
+F 2 "random-keyboard-parts:Molex-0548190589" H 5050 -5350 60  0001 C CNN
 F 3 "" H 5050 -5350 60  0001 C CNN
 	1    5050 -5350
 	0    -1   -1   0   
@@ -400,7 +217,7 @@ U 1 1 5F2F4640
 P 6250 -5550
 F 0 "F1" V 6045 -5550 50  0000 C CNN
 F 1 "500mA" V 6136 -5550 50  0000 C CNN
-F 2 "" H 6300 -5750 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6300 -5750 50  0001 L CNN
 F 3 "~" H 6250 -5550 50  0001 C CNN
 	1    6250 -5550
 	0    1    1    0   
@@ -457,7 +274,7 @@ U 1 1 5F303898
 P 6000 -3250
 F 0 "MX1" H 6033 -3027 60  0000 C CNN
 F 1 "MX-NoLED" H 6033 -3101 20  0000 C CNN
-F 2 "" H 5375 -3275 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 5375 -3275 60  0001 C CNN
 F 3 "" H 5375 -3275 60  0001 C CNN
 	1    6000 -3250
 	1    0    0    -1  
@@ -468,7 +285,7 @@ U 1 1 5F309526
 P 5750 -3000
 F 0 "D1" V 5796 -3068 50  0000 R CNN
 F 1 "D_Small" V 5705 -3068 50  0000 R CNN
-F 2 "" V 5750 -3000 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 5750 -3000 50  0001 C CNN
 F 3 "~" V 5750 -3000 50  0001 C CNN
 	1    5750 -3000
 	0    -1   -1   0   
@@ -481,7 +298,7 @@ U 1 1 5F31EDBF
 P 6750 -3250
 F 0 "MX2" H 6783 -3027 60  0000 C CNN
 F 1 "MX-NoLED" H 6783 -3101 20  0000 C CNN
-F 2 "" H 6125 -3275 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 6125 -3275 60  0001 C CNN
 F 3 "" H 6125 -3275 60  0001 C CNN
 	1    6750 -3250
 	1    0    0    -1  
@@ -492,7 +309,7 @@ U 1 1 5F31EDC9
 P 6500 -3000
 F 0 "D2" V 6546 -3068 50  0000 R CNN
 F 1 "D_Small" V 6455 -3068 50  0000 R CNN
-F 2 "" V 6500 -3000 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 6500 -3000 50  0001 C CNN
 F 3 "~" V 6500 -3000 50  0001 C CNN
 	1    6500 -3000
 	0    -1   -1   0   
@@ -505,7 +322,7 @@ U 1 1 5F321FE0
 P 6000 -2600
 F 0 "MX3" H 6033 -2377 60  0000 C CNN
 F 1 "MX-NoLED" H 6033 -2451 20  0000 C CNN
-F 2 "" H 5375 -2625 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 5375 -2625 60  0001 C CNN
 F 3 "" H 5375 -2625 60  0001 C CNN
 	1    6000 -2600
 	1    0    0    -1  
@@ -516,7 +333,7 @@ U 1 1 5F321FEA
 P 5750 -2350
 F 0 "D3" V 5796 -2418 50  0000 R CNN
 F 1 "D_Small" V 5705 -2418 50  0000 R CNN
-F 2 "" V 5750 -2350 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 5750 -2350 50  0001 C CNN
 F 3 "~" V 5750 -2350 50  0001 C CNN
 	1    5750 -2350
 	0    -1   -1   0   
@@ -529,7 +346,7 @@ U 1 1 5F328306
 P 6750 -2600
 F 0 "MX4" H 6783 -2377 60  0000 C CNN
 F 1 "MX-NoLED" H 6783 -2451 20  0000 C CNN
-F 2 "" H 6125 -2625 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 6125 -2625 60  0001 C CNN
 F 3 "" H 6125 -2625 60  0001 C CNN
 	1    6750 -2600
 	1    0    0    -1  
@@ -540,7 +357,7 @@ U 1 1 5F328310
 P 6500 -2350
 F 0 "D4" V 6546 -2418 50  0000 R CNN
 F 1 "D_Small" V 6455 -2418 50  0000 R CNN
-F 2 "" V 6500 -2350 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 6500 -2350 50  0001 C CNN
 F 3 "~" V 6500 -2350 50  0001 C CNN
 	1    6500 -2350
 	0    -1   -1   0   
@@ -575,4 +392,187 @@ Text GLabel 5150 -2900 0    50   Input ~ 0
 ROW0
 Text GLabel 5150 -2250 0    50   Input ~ 0
 ROW1
+Connection ~ 1900 -2100
+Wire Wire Line
+	1900 -2100 1450 -2100
+Wire Wire Line
+	2000 -2100 1900 -2100
+Connection ~ 2000 -5700
+Connection ~ 1900 -5700
+Wire Wire Line
+	2000 -5700 1900 -5700
+Wire Wire Line
+	2100 -5700 2000 -5700
+Wire Wire Line
+	2600 -3300 3300 -3300
+Text GLabel -50  -4300 0    50   Input ~ 0
+D-
+Text GLabel -50  -4400 0    50   Input ~ 0
+D+
+Wire Wire Line
+	1300 -5400 1400 -5400
+Connection ~ 1300 -5400
+Wire Wire Line
+	1300 -5650 1300 -5400
+Wire Wire Line
+	1250 -5400 1300 -5400
+Wire Wire Line
+	850  -5500 850  -5400
+Wire Wire Line
+	700  -5500 850  -5500
+$Comp
+L power:GND #PWR0109
+U 1 1 5F33EC4A
+P 700 -5500
+F 0 "#PWR0109" H 700 -5750 50  0001 C CNN
+F 1 "GND" H 705 -5673 50  0000 C CNN
+F 2 "" H 700 -5500 50  0001 C CNN
+F 3 "" H 700 -5500 50  0001 C CNN
+	1    700  -5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F33D731
+P 1050 -5400
+F 0 "SW1" H 1050 -5115 50  0000 C CNN
+F 1 "SW_Push" H 1050 -5206 50  0000 C CNN
+F 2 "random-keyboard-parts:SKQG-1155865" H 1050 -5200 50  0001 C CNN
+F 3 "~" H 1050 -5200 50  0001 C CNN
+	1    1050 -5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	300  -5250 150  -5250
+Wire Wire Line
+	650  -4900 650  -5100
+Connection ~ 650  -4900
+Wire Wire Line
+	850  -4900 850  -5100
+Wire Wire Line
+	650  -4900 850  -4900
+Connection ~ 150  -4850
+Wire Wire Line
+	650  -4850 650  -4900
+Wire Wire Line
+	150  -4850 650  -4850
+Wire Wire Line
+	150  -4950 150  -4850
+Connection ~ 150  -4950
+Wire Wire Line
+	150  -4950 300  -4950
+Connection ~ 750  -5000
+Wire Wire Line
+	500  -5000 500  -4950
+Wire Wire Line
+	750  -5000 500  -5000
+Wire Wire Line
+	150  -5250 150  -4950
+Connection ~ 750  -5200
+Wire Wire Line
+	750  -5250 500  -5250
+Wire Wire Line
+	750  -5200 750  -5250
+$Comp
+L Device:C_Small C2
+U 1 1 5F337872
+P 400 -4950
+F 0 "C2" V 171 -4950 50  0000 C CNN
+F 1 "22pF" V 262 -4950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 400 -4950 50  0001 C CNN
+F 3 "~" H 400 -4950 50  0001 C CNN
+	1    400  -4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F336815
+P 150 -4850
+F 0 "#PWR0108" H 150 -5100 50  0001 C CNN
+F 1 "GND" H 155 -5023 50  0000 C CNN
+F 2 "" H 150 -4850 50  0001 C CNN
+F 3 "" H 150 -4850 50  0001 C CNN
+	1    150  -4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5F335084
+P 400 -5250
+F 0 "C1" V 171 -5250 50  0000 C CNN
+F 1 "22pF" V 262 -5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 400 -5250 50  0001 C CNN
+F 3 "~" H 400 -5250 50  0001 C CNN
+	1    400  -5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  -5000 1400 -5000
+Wire Wire Line
+	1400 -5200 750  -5200
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 5F32CA4F
+P 750 -5100
+F 0 "Y1" V 704 -4956 50  0000 L CNN
+F 1 "16MHz" V 795 -4956 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 750 -5100 50  0001 C CNN
+F 3 "~" H 750 -5100 50  0001 C CNN
+	1    750  -5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 -4600 350  -4600
+$Comp
+L power:+5V #PWR0107
+U 1 1 5F32940C
+P 350 -4600
+F 0 "#PWR0107" H 350 -4750 50  0001 C CNN
+F 1 "+5V" H 365 -4427 50  0000 C CNN
+F 2 "" H 350 -4600 50  0001 C CNN
+F 3 "" H 350 -4600 50  0001 C CNN
+	1    350  -4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	250  -4300 -50  -4300
+Wire Wire Line
+	1400 -4300 450  -4300
+Wire Wire Line
+	700  -4400 -50  -4400
+Wire Wire Line
+	1400 -4400 900  -4400
+$Comp
+L Device:R_Small R3
+U 1 1 5F30870E
+P 350 -4300
+F 0 "R3" V 154 -4300 50  0000 C CNN
+F 1 "22" V 245 -4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 350 -4300 50  0001 C CNN
+F 3 "~" H 350 -4300 50  0001 C CNN
+	1    350  -4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5F307178
+P 800 -4400
+F 0 "R2" V 604 -4400 50  0000 C CNN
+F 1 "22" V 695 -4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 800 -4400 50  0001 C CNN
+F 3 "~" H 800 -4400 50  0001 C CNN
+	1    800  -4400
+	0    1    1    0   
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5F2FC833
+P 2000 -3900
+F 0 "U1" H 2000 -5789 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2000 -5880 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2000 -3900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2000 -3900 50  0001 C CNN
+	1    2000 -3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
